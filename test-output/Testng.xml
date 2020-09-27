@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LSAssignemnt">
+
+	<listeners>
+		<listener class-name="com.LSAssignment.utilities.Reporting" />
+	</listeners>
+
+
+	<test name="LSAssignment Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.LSAssignment.testCases.TC001_ValidateLinks" />
+			<class name="com.LSAssignment.testCases.TC002_GetBannercount" />
+			<class name="com.LSAssignment.testCases.TC003_ValidateLogin" />
+			<class name="com.LSAssignment.testCases.TC004_PinCodeValidation" />
+
+		</classes>
+
+	</test>
+
+</suite>
